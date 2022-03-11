@@ -55,13 +55,13 @@
 		<div class="overlay">
 			<div class="overlay-panel overlay-left">
 				<h1>Welcome Back!</h1>
-				<p>Please login with your personal info</p>
+				<p>Please login with your personal informattion.</p>
 				<button class="ghost" id="signIn">Sign In</button>
 			</div>
 			<div class="overlay-panel overlay-right">
 				<h1>Hello, Friend!</h1>
-				<p>Enter your personal details and start journey with us</p>
-				<p>Explore Gaming tools</p>
+				<p>Enter your personal details and start an amazing journey with us.</p>
+				<p>Explore Gaming Tools</p>
 				
 			</div>
 		</div>
