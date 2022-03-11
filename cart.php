@@ -240,7 +240,7 @@
                         <div class="col-md-12 col-lg-6">
                             <div class="footer-widget">
                                 <div class="section-heading">
-                                    <h3> All Right Reserved by Gaming world</h3>
+                                    <h3> All Right Reserved by Gaming World</h3>
                                     <span class="animate-border border-black"></span>
                                 </div>
                                 <p>
@@ -265,7 +265,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <span>Copyright © 2022, All Right Reserved Gaming world</span>
+                        <span>Copyright © 2022, All Right Reserved Gaming World</span>
                     </div>
                     <!-- End Col -->
                     <div class="col-md-6">
