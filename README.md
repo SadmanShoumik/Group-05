@@ -2,6 +2,8 @@
 
 IT-3206 Web Technology Lab Project (Group-05)
 
+Project Idea: E-Commerce Website
+
 1. Nishat Nabila (1756) - (180231)
 2. Sadman Shoumik (1791) - (180266)
 3. Sudipto Shahnawaz Shanto (1794) - (180269)
