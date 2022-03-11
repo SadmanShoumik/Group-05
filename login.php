@@ -38,9 +38,8 @@
             <span class="title-word title-word-1">Welcome</span>
             <span class="title-word title-word-2">to</span>
             <span class="title-word title-word-3">Gaming</span>
-            <span class="title-word title-word-4">world</span>
+            <span class="title-word title-word-4">World</span>
           </h2>
-          <p>The Indian technology media industry is driven by hundreds of people who, at one time or another, worked and trained at Digit. We’re proud of our legacy of shaping the industry as pioneers in the field, and extremely happy that so many of our Digit family have helped scale the technology media vertical to new heights, and are helping India take over the digital world.</p>
         </div>
     </div>
     <div class="col-6">
