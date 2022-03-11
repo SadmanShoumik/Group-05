@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>signup page</title>
+    <title>Signup Page</title>
     <link rel="icon" type="image/x-icon" href="icons/icon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -22,7 +22,7 @@
     
     <div class="form-container sign-in-container">
       <form method="POST" action="signup.php" class="form" id="login">
-        <h1 class="form__title"> Sign Up here</h1>
+        <h1 class="form__title"> Sign Up Here</h1>
         <div class="form__input-group">
           
           <input type="text" class="form__input" name="uname" id="username" maxlength="20" placeholder="Enter your username" required> 
