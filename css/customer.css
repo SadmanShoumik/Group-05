@@ -147,7 +147,11 @@ h6 {
     background-color: black;
 }
 .mdiclr{
-    color: #E6D5B8;
+    color: #EDEDED;
+}
+.mdiclr:hover{
+    color: orange;
+    text-shadow: 0 0 10px orange;
 }
 .uper{
     text-transform: uppercase;
