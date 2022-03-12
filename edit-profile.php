@@ -82,11 +82,7 @@ while($row=mysqli_fetch_row($res)){
                                     <div class="card-block">
                                         <h6 class="m-b-20 p-b-5 b-b-default f-w-600">Information</h6>
                             <form action="edit-profile.php" method="post">
-                            <div class="form-control">
-                                <input type="text" name="name" id="name" placeholder="Edit your username" class="form control ">
-                            </div>
                             
-                            <input type="submit" value="Edit Username" name="bname" class="form-control btn btn-dark float-left mb-3"> 
                             <div class="form-control">
                                 <input type="email" name="email" id="email" placeholder="Edit your Email" class="form control">
                             </div>
@@ -102,13 +98,12 @@ while($row=mysqli_fetch_row($res)){
                             </div>
                             
                             <input type="submit" value="Edit address" name="baddr" class="form-control btn btn-dark float-left mb-3"> 
-                            <!-- <div class="form-control">
-                                <input type="password" name="ppass"  placeholder="Enter previous password" class="form control">
+                           <div class="form-control">
+                            <input type="password" name="ppass"  placeholder="Enter previous password" class="form control">
+                            <input type="password" name="npass"  placeholder="Enter new password" class="form control"> 
                             </div>
-                            <div class="form-control">
-                                <input type="password" name="npass"  placeholder="Enter new password" class="form control">
-                            </div>
-                            <input type="submit" value="Set Password" name="bpass" class="form-control btn btn-dark float-left mb-3"> -->
+                            <input type="submit" value="Change Password" name="bpass" class="form-control btn btn-dark float-left mb-3">
+                            
                         </form>
 
                                     </div>
@@ -122,15 +117,22 @@ while($row=mysqli_fetch_row($res)){
         </div>
     </div>
     <?php
-                if(isset($_POST['bname'])){
+                
+                if(isset($_POST['bpass'])){
                     $con=mysqli_connect("localhost","root","","grp-5");
-                    $n=$_POST['name'];
-                    $q="UPDATE customer SET name = '$n' WHERE id = $id;";
-                    $res=mysqli_query($con,$q);
-                    echo "<script>alert('Username is updated')</script>";
-                    echo "<script>location.href='customer.php'</script>";
+                    $n=$_POST['ppass'];
+                    $np=$_POST['npass'];
+                    if($P==$n){
+                        $q="UPDATE customer SET pass='$np' WHERE name ='$uname' ;";
+                        $res=mysqli_query($con,$q);
+                        echo "<script>alert('password is updated')</script>";
+                        echo "<script>location.href='customer.php'</script>";
+                    }
+                    else{
+                        echo "<script>alert('Enter previous password correctly')</script>";
+                    }
                 }
-                if(isset($_POST['bemail'])){
+                else if(isset($_POST['bemail'])){
                     $con=mysqli_connect("localhost","root","","grp-5");
                     $n=$_POST['email'];
                     $q="UPDATE customer SET email = '$n' WHERE id = $id;";
@@ -138,7 +140,7 @@ while($row=mysqli_fetch_row($res)){
                     echo "<script>alert('Email is updated')</script>";
                     echo "<script>location.href='customer.php'</script>";
                 }
-                if(isset($_POST['baddr'])){
+                else if(isset($_POST['baddr'])){
                     $con=mysqli_connect("localhost","root","","grp-5");
                     $n=$_POST['addr'];
                     $q="UPDATE customer SET addr = '$n' WHERE id = $id;";
@@ -146,7 +148,7 @@ while($row=mysqli_fetch_row($res)){
                     echo "<script>alert('Address is updated')</script>";
                     echo "<script>location.href='customer.php'</script>";
                 }
-                if(isset($_POST['bphn'])){
+                else if(isset($_POST['bphn'])){
                     $con=mysqli_connect("localhost","root","","grp-5");
                     $n=$_POST['phn'];
                     $q="UPDATE customer SET phone = '$n' WHERE id = $id;";
@@ -154,21 +156,7 @@ while($row=mysqli_fetch_row($res)){
                     echo "<script>alert('phone number is updated')</script>";
                     echo "<script>location.href='customer.php'</script>";
                 }
-                if(isset($_POST['bphn'])){
-                    $con=mysqli_connect("localhost","root","","grp-5");
-                    $n=$_POST['ppass'];
-                    $np=$_POST['npass'];
-                    if($P==$n){
-                        $q="UPDATE customer SET password = '$np' WHERE id = $id;";
-                        $res=mysqli_query($con,$q);
-                        echo "<script>alert('password is updated')</script>";
-                        echo "<script>location.href='customer.php'</script>";
-                    }else{
-                        echo "<script>alert('Enter previous password correctly')</script>";
-                        
-                    }
-                   
-                }
+                
             ?>
 
 <footer id="dk-footer" class="dk-footer mt-5">
