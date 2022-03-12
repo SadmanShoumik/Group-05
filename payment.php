@@ -441,6 +441,21 @@ p {
 }
 </style>
 
+<?php
+
+$uname= $_SESSION['uname'];
+$q="select * from customer where name='$uname'";
+$con=mysqli_connect("localhost","root","","grp-5");
+$res=mysqli_query($con,$q);
+while($row=mysqli_fetch_row($res)){
+    $addr=$row[4];
+    $phn=$row[6];
+    $email=$row[3];
+    $P=$row[2];
+    $id=$row[0];
+}
+?>
+
 <body style="background-color: gray;">
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark mt-0">
   <div class="container-fluid">
@@ -470,22 +485,22 @@ p {
         <div class="col-lg-4 mb-lg-0 mb-3">
             <div class="card p-3">
                 <div class="img-box"> <img src="icons/bkash.png" alt=""> </div>
-                <div class="number"> <label class="fw-bold" for="">017xx-xxxxxx</label> </div>
-                <div class="d-flex align-items-center justify-content-between"><small><span class="fw-bold">Name:</span><span>Username</span></small> </div>
+                <div class="number"> <label class="fw-bold" for=""><?php echo $phn; ?></label> </div>
+                <div class="d-flex align-items-center justify-content-between"><small><span class="fw-bold">Name:</span><span><?php echo $uname; ?></span></small> </div>
             </div>
         </div>
         <div class="col-lg-4 mb-lg-0 mb-3">
             <div class="card p-3">
                 <div class="img-box"> <img src="icons/rocket.png" alt=""> </div>
-                <div class="number"> <label class="fw-bold">019xx-xxxxxx</label> </div>
-                <div class="d-flex align-items-center justify-content-between"><small><span class="fw-bold">Name:</span><span>Kumar</span></small> </div>
+                <div class="number"> <label class="fw-bold"><?php echo $phn; ?></label> </div>
+                <div class="d-flex align-items-center justify-content-between"><small><span class="fw-bold">Name:</span><span><?php echo $uname; ?></span></small> </div>
             </div>
         </div>
         <div class="col-lg-4 mb-lg-0 mb-3">
             <div class="card p-3">
                 <div class="img-box"> <img src="icons/nagad.png" alt=""> </div>
-                <div class="number"> <label class="fw-bold">018xx-xxxxxx</label> </div>
-                <div class="d-flex align-items-center justify-content-between"><small><span class="fw-bold">Name:</span><span>Kumar</span></small> </div>
+                <div class="number"> <label class="fw-bold"><?php echo $phn; ?></label> </div>
+                <div class="d-flex align-items-center justify-content-between"><small><span class="fw-bold">Name:</span><span><?php echo $uname; ?></span></small> </div>
             </div>
         </div>
         <div class="col-12 mt-4">
@@ -749,7 +764,7 @@ p {
                         <div class="col-md-12 col-lg-6">
                             <div class="footer-widget">
                                 <div class="section-heading">
-                                    <h3> All Right Reserved by Gaming World</h3>
+                                    <h3> All Right Reserved by Gaming world</h3>
                                     <span class="animate-border border-black"></span>
                                 </div>
                                 <p>
@@ -774,7 +789,7 @@ p {
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <span>Copyright © 2022, All Right Reserved Gaming World</span>
+                        <span>Copyright © 2022, All Right Reserved Gaming world</span>
                     </div>
                     <!-- End Col -->
                     <div class="col-md-6">
