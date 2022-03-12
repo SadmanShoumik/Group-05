@@ -55,11 +55,6 @@ while($row=mysqli_fetch_row($res)){
       </li>
 
     </ul>
-    <form class="d-flex" action="home.php" method="post">
-        <input class="form-control me-2" type="text" name="brand" placeholder="Search by brand"  onkeyup="showhint(this.value)">
-        <button class="btn btn-secondary" type="submit" name="search">Search</button>
-        <h2 class="text-white badge badge-primary">clue:<span id="txthints" class="text-white badge badge-dark"></span> </h2>
-      </form>
   </div>
 </nav>
 
