@@ -10,14 +10,14 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Account</title>
     <link rel="icon" type="image/x-icon" href="icons/icon.ico">
-    <link rel="stylesheet" type="text/css" href="customer.css?v=<?php echo time(); ?>"/>
-    <link rel="stylesheet" type="text/css" href="home.css?v=<?php echo time(); ?>"/>
-    
+    <link rel="stylesheet" type="text/css" href="css/customer.css?v=<?php echo time(); ?>"/>
+    <link rel="stylesheet" type="text/css" href="css/home.css?v=<?php echo time(); ?>"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/3.6.95/css/materialdesignicons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
     <style>
         body{
             color: orange;
@@ -74,7 +74,7 @@ while($row=mysqli_fetch_row($res)){
                                 <div class="card-block text-center text-white">
                                     <div class="m-b-25"> <img src="https://img.icons8.com/bubbles/100/000000/user.png" class="img-radius" alt="User-Profile-Image"> </div>
                                     <h6 class="f-w-600">Welcome</h6>
-                                    <p><?php echo $uname; ?></p> 
+                                    <p class="uper"><?php echo $uname; ?></p> 
                                     <a href="edit-profile.php"><span class="mdi mdi-account-edit mdi-36px mdiclr"></span></a>
                                     
                                 </div>
@@ -252,8 +252,7 @@ while($row=mysqli_fetch_row($res)){
                                     <h3> All Right Reserved by Gaming world</h3>
                                     <span class="animate-border border-black"></span>
                                 </div>
-                                <p>
-                                Reference site about Lorem Ipsum, giving information on its origins, as well.</p>
+                            
                                
                                 
                             </div>

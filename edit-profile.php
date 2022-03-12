@@ -10,14 +10,14 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit pfofile</title>
     <link rel="icon" type="image/x-icon" href="icons/icon.ico">
-    <link rel="stylesheet" type="text/css" href="customer.css?v=<?php echo time(); ?>"/>
-    <link rel="stylesheet" type="text/css" href="home.css?v=<?php echo time(); ?>"/>
+    <link rel="stylesheet" type="text/css" href="css/customer.css?v=<?php echo time(); ?>"/>
+    <link rel="stylesheet" type="text/css" href="css/home.css?v=<?php echo time(); ?>"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/3.6.95/css/materialdesignicons.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
     <style>
         body{
             color: orange;
@@ -48,7 +48,7 @@ while($row=mysqli_fetch_row($res)){
       <img src="icons/game.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
     </a>
       <li class="nav-item">
-        <a class="nav-link active" href="edit-profile.php" style="margin-left:90px">My account <img src="icons/user.png" width="40px" height="40px"></a>
+        <a class="nav-link active" href="customer.php" style="margin-left:90px">My account <img src="icons/user.png" width="40px" height="40px"></a>
       </li>
       <li class="nav-item">
         <a class="nav-link active" href="cart.php" style="margin-left:90px">View cart<img src="icons/cart.png" width="40px" height="40px"> </a>
@@ -74,13 +74,13 @@ while($row=mysqli_fetch_row($res)){
                                     <div class="card-block text-center text-white">
                                         <div class="m-b-25"> <img src="https://img.icons8.com/bubbles/100/000000/user.png" class="img-radius" alt="User-Profile-Image"> </div>
                                         <h6 class="f-w-600">Welcome</h6>
-                                        <p><?php echo $uname; ?></p>                                         
+                                        <p class="uper"><?php echo $uname; ?></p>                                         
                                     </div>
                                 </div>
                                 
                                 <div class="col-sm-8 center-block hello">
                                     <div class="card-block">
-                                        <h6 class="m-b-20 p-b-5 b-b-default f-w-600">Information</h6>
+                                        <h6 class="m-b-20 p-b-5 b-b-default f-w-600">Edit Information</h6>
                             <form action="edit-profile.php" method="post">
                             
                             <div class="form-control">
@@ -98,12 +98,12 @@ while($row=mysqli_fetch_row($res)){
                             </div>
                             
                             <input type="submit" value="Edit address" name="baddr" class="form-control btn btn-dark float-left mb-3"> 
-                           <div class="form-control">
+                            <h6 class="m-b-20 p-b-5 b-b-default f-w-600">Edit Password</h6>
+                            <div class="form-control">
                             <input type="password" name="ppass"  placeholder="Enter previous password" class="form control">
                             <input type="password" name="npass"  placeholder="Enter new password" class="form control"> 
                             </div>
                             <input type="submit" value="Change Password" name="bpass" class="form-control btn btn-dark float-left mb-3">
-                            
                         </form>
 
                                     </div>
@@ -288,8 +288,6 @@ while($row=mysqli_fetch_row($res)){
                                     <h3> All Right Reserved by Gaming world</h3>
                                     <span class="animate-border border-black"></span>
                                 </div>
-                                <p>
-                                Reference site about Lorem Ipsum, giving information on its origins, as well.</p>
                                
                                 
                             </div>
