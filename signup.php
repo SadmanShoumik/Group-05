@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup Page</title>
+    <title>signup page</title>
     <link rel="icon" type="image/x-icon" href="icons/icon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -15,14 +15,14 @@
 </head>
 
 
-<body style="background-color: gray">
+<body>
 
 
-<div class="container" id="container" style="margin-top: -700px">
+<div class="container" id="container" style="margin-top: 100px">
     
     <div class="form-container sign-in-container">
       <form method="POST" action="signup.php" class="form" id="login">
-        <h1 class="form__title"> Sign Up Here</h1>
+        <h1 class="form__title"> Sign Up here</h1>
         <div class="form__input-group">
           
           <input type="text" class="form__input" name="uname" id="username" maxlength="20" placeholder="Enter your username" required> 
@@ -55,13 +55,13 @@
 		<div class="overlay">
 			<div class="overlay-panel overlay-left">
 				<h1>Welcome Back!</h1>
-				<p>Please login with your personal informattion.</p>
+				<p>Please login with your personal info</p>
 				<button class="ghost" id="signIn">Sign In</button>
 			</div>
 			<div class="overlay-panel overlay-right">
 				<h1>Hello, Friend!</h1>
-				<p>Enter your personal details and start an amazing journey with us.</p>
-				<p>Explore Gaming Tools</p>
+				<p>Enter your personal details and start journey with us</p>
+				<p>Explore Gaming tools</p>
 				
 			</div>
 		</div>
